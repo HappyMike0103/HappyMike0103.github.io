@@ -213,7 +213,7 @@
         <div class="label text-third-text-color text-sm">Categories</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">4</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">3</div>
         <div class="label text-third-text-color text-sm">Posts</div>
     </a>
 </div>
@@ -309,44 +309,29 @@
 		<div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
 			<h2 id="hexo"><a href="#hexo" class="headerlink" title="hexo"></a>hexo</h2><h3 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h3><p>hexo 是一個架設靜態網站的好東西，而我選擇他是因為看到別人的網頁好好看，所以也跟著做(? 原本因該很早以前就要開始了，但那時期中考很忙，所以我現在才開始(嘿嘿。github pages 是給你個免費的網域可以給別人看你的網站，但只能放靜態的，別問我什麼是動態的我也不懂(?</p>
 <h3 id="第一步需要下載-Node-js-跟-hexo"><a href="#第一步需要下載-Node-js-跟-hexo" class="headerlink" title="第一步需要下載 Node.js 跟 hexo"></a>第一步需要下載 Node.js 跟 hexo</h3><ul>
-<li>到 <a class="link"   target="_blank" rel="noopener" href="https://nodejs.org/en" >Node.js 官網<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>下載 LTS 版本的 Node.js<br>並完成下載最後會出現要不要安裝 nessary tool…的東東，可選可不選(我有選，但不選也沒差)</li>
+<li>到 <a class="link" target="_blank" rel="noopener" href="https://nodejs.org/en">Node.js 官網<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>下載 LTS 版本的 Node.js<br>並完成下載最後會出現要不要安裝 nessary tool…的東東，可選可不選(我有選，但不選也沒差)</li>
 <li>可到終端機執行 <code>node -v</code> 或 <code>node --version</code> 查看版本<br>這步驟是為了確認是否下載成功</li>
 <li>在終端機執行<code>npm install hexo-cli -g</code>下載 hexo</li>
 <li>可到終端機執行 <code>hexo version</code> 或 <code>hexo -v</code> 查看 Hexo 版本</li>
 </ul>
 <h3 id="init-hexo-資料夾"><a href="#init-hexo-資料夾" class="headerlink" title="init hexo 資料夾"></a>init hexo 資料夾</h3><div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo init &lt;folder name&gt;</span><br><span class="line"><span class="built_in">cd</span> &lt;folder name&gt;</span><br><span class="line">npm install <span class="comment"># 下載 hexo 會用到的 package</span></span><br><span class="line">npm install hexo-deployer-git --save <span class="comment"># 這是為了上傳到 github 時需要的工具</span></span><br><span class="line">code . <span class="comment"># 我這裡是用vscode 進入編輯畫面</span></span><br></pre></td></tr></table></figure></div>
 
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/2024/12/31/hexo-pages/init_hexo_pages_record.png"
-                      alt="code"
-                ></p>
-<p>打開 vscode 時，我們的目錄會長這樣：<br><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/2024/12/31/hexo-pages/init_tree.png"
-                      alt="tree"
-                ></p>
-<h2 id="設定背景主題"><a href="#設定背景主題" class="headerlink" title="設定背景主題"></a>設定背景主題</h2><p>他其實本來就有預設的了，但我不喜歡(YA，所以我自己去找了好看的，我使用的是<a class="link"   target="_blank" rel="noopener" href="https://redefine.ohevan.com/" >redefine<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>，他真的好好看</p>
+<p><img lazyload src="/images/loading.svg" data-src="/2024/12/31/hexo-pages/init_hexo_pages_record.png" alt="code"></p>
+<p>打開 vscode 時，我們的目錄會長這樣：<br><img lazyload src="/images/loading.svg" data-src="/2024/12/31/hexo-pages/init_tree.png" alt="tree"></p>
+<h2 id="設定背景主題"><a href="#設定背景主題" class="headerlink" title="設定背景主題"></a>設定背景主題</h2><p>他其實本來就有預設的了，但我不喜歡(YA，所以我自己去找了好看的，我使用的是<a class="link" target="_blank" rel="noopener" href="https://redefine.ohevan.com/">redefine<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>，他真的好好看</p>
 <ul>
-<li>第一先點上面的 <a class="link"   target="_blank" rel="noopener" href="https://redefine-docs.ohevan.com/zh" >DOCS 連結<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></li>
-<li>再點畫面中的<a class="link"   target="_blank" rel="noopener" href="https://redefine-docs.ohevan.com/zh/getting-started" >快速開始<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></li>
+<li>第一先點上面的 <a class="link" target="_blank" rel="noopener" href="https://redefine-docs.ohevan.com/zh">DOCS 連結<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></li>
+<li>再點畫面中的<a class="link" target="_blank" rel="noopener" href="https://redefine-docs.ohevan.com/zh/getting-started">快速開始<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></li>
 <li>按照上面所述的方式設定主題</li>
 <li>在終端輸入 <code>npm install hexo-theme-redefine@latest</code></li>
 <li>到_config.yml 裡面將<code>theme: landscape</code>變為<code>theme: redefine</code></li>
 <li>再把原本的<code>_config.landscape.yml</code>改為<code>_config.redefine.yml</code></li>
-<li>在進入_config.redefine.yml 並把<a class="link"   target="_blank" rel="noopener" href="https://github.com/EvanNotFound/hexo-theme-redefine/blob/main/_config.yml" >此連結<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>的內容複製進去</li>
+<li>在進入_config.redefine.yml 並把<a class="link" target="_blank" rel="noopener" href="https://github.com/EvanNotFound/hexo-theme-redefine/blob/main/_config.yml">此連結<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>的內容複製進去</li>
 </ul>
 <p><del>這樣就搞定一些了，換到 github pages 的設定了</del></p>
 <h2 id="github-pages"><a href="#github-pages" class="headerlink" title="github pages"></a>github pages</h2><ul>
 <li>登入 github，(這步我就不教了</li>
-<li>按<code>new</code>把<code>Repository name*</code>打上<code>用戶名.github.io</code>，應該會到以下畫面：<br>所以看到我的網址就可以知道我的用戶名是<code>happymike0103</code><br><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/2024/12/31/hexo-pages/temp_null_github_pages.png"
-                      alt="empty_github_pages"
-                ></li>
+<li>按<code>new</code>把<code>Repository name*</code>打上<code>用戶名.github.io</code>，應該會到以下畫面：<br>所以看到我的網址就可以知道我的用戶名是<code>happymike0103</code><br><img lazyload src="/images/loading.svg" data-src="/2024/12/31/hexo-pages/temp_null_github_pages.png" alt="empty_github_pages"></li>
 </ul>
 <blockquote>
 <p>這樣目前就設定好了</p>
@@ -383,12 +368,12 @@
 </ol>
 <h2 id="結論"><a href="#結論" class="headerlink" title="結論"></a>結論</h2><p>由於這是第一篇文章，所以排版可能不會那麼好看，我也會在制訂一下版面，但我大概就不會再改了，畢竟我想要做我的成長學習歷程，所以請各位加減看吧，由於現在算是寒假吧，我會努力多生產一點文章，如果沒有代表我去輪迴了，懇請多多擔待，我也趁著一天的時間把所有東西都寫好了，那就請各位慢慢欣賞吧我們明年見，新年快樂!!</p>
 <h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ul>
-<li><a class="link"   target="_blank" rel="noopener" href="https://redefine.ohevan.com/" >主題<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></li>
-<li><a class="link"   target="_blank" rel="noopener" href="https://hexo.io/zh-tw/docs/asset-folders" >官方文件<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></li>
-<li><a class="link"   target="_blank" rel="noopener" href="https://hackmd.io/@smallshawn95/hexo_install?utm_source=preview-mode" >Hexo 教學：從頭打造個人部落格 — 開發環境設置與專案初始化<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></li>
-<li><a class="link"   target="_blank" rel="noopener" href="https://chanchandev.com/note/Hexo/hexo-introduction/2335841689/" >架設部落格第一次就上手 Hexo + Github + 自訂網域<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></li>
-<li><a class="link"   target="_blank" rel="noopener" href="https://hackmd.io/@Heidi-Liu/note-hexo-github" >【學習筆記】如何使用 Hexo + GitHub Pages 架設個人網誌<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></li>
-<li><a class="link"   target="_blank" rel="noopener" href="https://www.hwpo.top/posts/d87f7e0c/index.html" >Hexo插入圖片並解決圖片的路徑問題<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></li>
+<li><a class="link" target="_blank" rel="noopener" href="https://redefine.ohevan.com/">主題<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></li>
+<li><a class="link" target="_blank" rel="noopener" href="https://hexo.io/zh-tw/docs/asset-folders">官方文件<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></li>
+<li><a class="link" target="_blank" rel="noopener" href="https://hackmd.io/@smallshawn95/hexo_install?utm_source=preview-mode">Hexo 教學：從頭打造個人部落格 — 開發環境設置與專案初始化<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></li>
+<li><a class="link" target="_blank" rel="noopener" href="https://chanchandev.com/note/Hexo/hexo-introduction/2335841689/">架設部落格第一次就上手 Hexo + Github + 自訂網域<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></li>
+<li><a class="link" target="_blank" rel="noopener" href="https://hackmd.io/@Heidi-Liu/note-hexo-github">【學習筆記】如何使用 Hexo + GitHub Pages 架設個人網誌<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></li>
+<li><a class="link" target="_blank" rel="noopener" href="https://www.hwpo.top/posts/d87f7e0c/index.html">Hexo插入圖片並解決圖片的路徑問題<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></li>
 </ul>
 
 		</div>
@@ -446,12 +431,12 @@
 		<div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
 			
 			<div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-				<a class="prev" rel="prev" href="/2024/12/31/hello-world/">
+				<a class="prev" rel="prev" href="/2025/01/02/2025-1-2-Assembly-Language-Assembly-Language/">
 					<span class="left arrow-icon flex justify-center items-center">
 						<i class="fa-solid fa-chevron-left"></i>
 					</span>
 					<span class="title flex justify-center items-center">
-						<span class="post-nav-title-item">Hello World</span>
+						<span class="post-nav-title-item">Assembly-Language for pwn</span>
 						<span class="post-nav-item">Prev posts</span>
 					</span>
 				</a>
@@ -541,7 +526,7 @@
                 
                 <p class="post-count space-x-0.5">
                     <span>
-                        4 posts in total
+                        3 posts in total
                     </span>
                     
                 </p>
