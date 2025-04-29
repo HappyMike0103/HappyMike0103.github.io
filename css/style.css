@@ -4960,3 +4960,6 @@ html.is-animating .transition-fade-down {
   color: var(--second-text-color);
   text-align: center;
 }
+.page-template-content h1 {
+  text-align: center;
+}
